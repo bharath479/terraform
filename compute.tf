@@ -1,5 +1,5 @@
 resource "google_compute_instance" "vm" {
-  name         = "my-vm"
+  name         = "my-app-vm"
   machine_type = "e2-micro"
   zone         = var.zone
 
