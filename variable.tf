@@ -1,6 +1,18 @@
-variable "project_id" {
-    description = "glass-ally-479415-q8"
-    type = string
+variable "credentials_file" {
+  type = string
 }
-variable "region" { default = "us-central1" }
-variable "zone"   { default = "us-central1-a" }
+
+variable "project_id" {
+  type        = string
+  description = "GCP_PROJECT_ID"
+}
+
+variable "region" {
+  type    = string
+  default = "us-central1"
+}
+
+variable "zone" {
+  type    = string
+  default = "us-central1-a"
+}
